@@ -1,0 +1,1215 @@
+/* 
+    Главный файл стилей
+*/
+* {
+    user-select: none !important;
+    outline: none !important;
+}
+html {
+    /* cursor: none; */
+    overflow: hidden;
+    background: var(--background-color);
+    font-size: var(--font-size);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*
+    Уведомления 
+*/
+
+.notification-container {
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0;
+    margin-bottom: 10px;
+    transform: translateX(-20px);
+    transition: 0.3s ease-in-out;
+}
+
+.notification {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--page-background-primary-color);
+    height: 60px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.notification-container.notify-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.notification svg {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-right: 25px;
+    flex-shrink: 0;
+    z-index: 100;
+}
+.notification-container::after {
+    position: absolute;
+    content: '';
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: var(--notify-background-color);
+}
+
+.notification span {
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notify-success svg {
+    color: var(--notify-success);
+}
+.notify-warn svg {
+    color: var(--notify-warn);
+}
+.notify-error svg {
+    color: var(--notify-error);
+}
+.notify-info svg {
+    color: var(--notify-info);
+}
+
+/*
+    Кнопки навигации    
+*/
+
+.navigation-container__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    width: 64px;
+    height: 64px;
+    border: none;
+    transition: 0.2s;
+}
+
+.navigation-container__button svg {
+    width: 100%;
+    height: 100%;
+}
+.navigation-container__button:active {
+    width: 80px;
+    height: 80px;
+}
+.navigation-container__button svg path,
+.navigation-container__button svg g {
+    transition: 0.2s;
+}
+.navigation-container__button:active svg path,
+.navigation-container__button svg g {
+    color: var(--accent-color);
+    filter: brightness(0.8);
+}
+
+.navigation-container > .active {
+    width: 80px;
+    height: 80px;
+}
+
+/*
+    Стиль для активных элементов
+*/
+.active,
+.active span,
+.active svg path {
+    color: var(--accent-color);
+}
+
+/* 
+    Стиль для страницы "Настройки"
+*/
+
+.settings_header {
+    display: flex;
+    z-index: 1;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 15px;
+    padding: 15px 0px;
+    background: var(--page-background-primary-color);
+    backdrop-filter: blur(5px);
+}
+.settings_header__avatar {
+    border-radius: 10px;
+    border: 2px solid var(--icon-color);
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+.settings_header__profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.1s;
+}
+
+.settings_header__profileContainer__title {
+    display: flex;
+    color: var(--text-primary-color);
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.settings_header__profileContainer__subtitle {
+    color: var(--text-secondary-color);
+    font-size: 14px;
+}
+.settings_header__profileContainer__profileMenu {
+    background: var(--page-background-secondary-color);
+}
+.settings_header__profileContainer__profileMenu__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--text-primary-color);
+}
+.settings_header__profileContainer__profileMenu__item img {
+    height: 32px;
+    width: 32px;
+    border-radius: 10px;
+    border: 2px solid var(--icon-color);
+    margin-right: 10px;
+}
+.settings_header__shutdown {
+    display: flex;
+    font-size: 24px;
+    margin: 0 25px 0 auto;
+    transition: 0.1s;
+    background: none;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: none;
+}
+.settings_header__shutdown svg {
+    width: 32px;
+    height: 32px;
+}
+.settings_header__shutdown__dropmenu {
+    background: var(--page-background-secondary-color);
+}
+.settings_header__shutdown__dropmenu_item {
+    color: var(--text-primary-color);
+}
+.settings_header__shutdown__dropmenu_item svg {
+    color: var(--icon-color);
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.settings_header__shutdown__btn {
+    outline: none;
+    box-shadow: none !important;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.settings_header__shutdown__btn svg {
+    color: var(--icon-color);
+    height: 26px;
+    width: 26px;
+}
+
+.settings_body {
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    flex: 1;
+    background: var(--page-background-primary-color);
+    backdrop-filter: blur(5px);
+}
+
+.settings_body__navigation {
+    border-radius: 10px;
+    width: 200px;
+    height: 100%;
+    background: var(--page-background-secondary-color);
+    backdrop-filter: blur(1px);
+}
+.settings_body__navigation__list {
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+.settings_body__navigation__list__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 20px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.settings_body__navigation__list__item__title {
+    color: var(--text-primary-color);
+    font-size: 16px;
+    margin-bottom: 0;
+    transition: 0.1s;
+}
+
+.settings_body__navigation__list__item svg {
+    color: var(--icon-color);
+    font-size: 32px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    transition: 0.1s;
+}
+
+.settings_body__navigation__list__item:active .settings_body__navigation__list__item__title,
+.settings_body__navigation__list__item:active svg {
+    color: var(--accent-color);
+    filter: brightness(0.8);
+}
+
+.settings_body__navigation__list__item.active::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    left: -10px;
+    height: 100%;
+    border-radius: 10px;
+    background: var(--accent-color);
+}
+.settings_body__content {
+    display: flex;
+    flex: 2;
+    padding: 10px;
+}
+
+/* 
+    Стили для страницы "Список приложений"
+*/
+.appList-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    min-height: 80px;
+    margin-bottom: 15px;
+    padding: 15px 0px;
+    background: var(--page-background-primary-color);
+    backdrop-filter: blur(5px);
+}
+.appList-header__item {
+    margin-right: 5px;
+}
+.appList-header__item__icon {
+    margin: 0 15px;
+    height: 40px;
+    width: 40px;
+}
+.appList-header__item__subtitle,
+.appList-header__item__title {
+    font-size: 24px;
+}
+
+.appList-header__item__subtitle {
+    color: var(--accent-color);
+}
+.appList-header__item__divider {
+    color: var(--text-secondary-color);
+}
+
+.appList-body {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--page-background-primary-color);
+    border-radius: 10px;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    flex: 1;
+    padding: 10px;
+}
+
+.appList-body__wrapper {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 920px) {
+    .appList-body__wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .appList-body__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appList-body__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .appList-body__wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+.appList-body__wrapper::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.appList-body__wrapper::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+.appList-body__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s;
+}
+.appList-body__item__wrapper__icon {
+    display: block;
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 15px;
+}
+.appList-body__item__wrapper__title {
+    font-size: 16px;
+    max-width: 90px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.appList-body__item__wrapper {
+    display: flex;
+    width: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.1s;
+    padding: 10px;
+    cursor: pointer;
+}
+.appList-body__item__wrapper:active {
+    background-color: var(--page-background-secondary-color);
+    color: var(--accent-color);
+}
+
+/*
+    UI Kit
+*/
+
+/* =========== BUTTON-FILL =========== */
+.SpecAR-UIKIT-button-filled {
+    display: inline-flex;
+    padding: 10px 30px;
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--text-primary-color);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.SpecAR-UIKIT-button-filled:active {
+    filter: brightness(0.8);
+}
+.SpecAR-UIKIT-button-filled svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+/* =========== BUTTON-FILL=========== */
+
+/* =========== BUTTON =========== */
+.SpecAR-UIKIT-button {
+    display: flex;
+    padding: 10px 30px;
+    background: none;
+    border: 2px solid var(--accent-color);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--accent-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.SpecAR-UIKIT-button:active {
+    background: var(--accent-color);
+    border: 2px solid var(--accent-color);
+    color: var(--icon-color);
+}
+.SpecAR-UIKIT-button svg {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+/* =========== BUTTON =========== */
+/* =========== TEXT ENTRY =========== */
+.SpecAR-UIKIT-textEntry {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.SpecAR-UIKIT-textEntry__title {
+    margin-bottom: 5px;
+}
+.SpecAR-UIKIT-textEntry__input {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--text-primary-color);
+}
+.SpecAR-UIKIT-textEntry__input:disabled {
+    color: var(--text-secondary-color);
+}
+/* =========== TEXT ENTRY =========== */
+
+/* =========== SWITCH=========== */
+.SpecAR-UIKIT-switch {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.SpecAR-UIKIT-switch input {
+    width: 3em !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e") !important;
+
+    height: 1.5em;
+    margin-left: auto !important;
+}
+.SpecAR-UIKIT-switch input:checked {
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+}
+.SpecAR-UIKIT-switch input:focus {
+    box-shadow: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
+    border-color: var(--accent-color);
+}
+/* =========== SWITCH=========== */
+
+/* =========== ACCORDION =========== */
+.SpecAR-UIKIT-accordion-item {
+    border: none;
+    background: none;
+    color: var(--text-primary-color);
+    margin-bottom: 10px;
+}
+.SpecAR-UIKIT-accordion-item:nth-last-child() {
+    margin-bottom: 0;
+}
+.SpecAR-UIKIT-accordion-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border: none;
+}
+.SpecAR-UIKIT-accordion-header button {
+    box-shadow: none;
+    background: var(--page-background-secondary-color) !important;
+    border-radius: 5px;
+}
+.SpecAR-UIKIT-accordion-header button span {
+    color: var(--text-primary-color);
+    font-size: 18px;
+}
+
+.SpecAR-UIKIT-accordion-header button img {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+.SpecAR-UIKIT-accordion-body {
+    display: flex;
+    flex-direction: column;
+}
+.SpecAR-UIKIT-accordion-body__description,
+.SpecAR-UIKIT-accordion-body__version,
+.SpecAR-UIKIT-accordion-body__mode {
+    display: flex;
+    align-items: center;
+}
+.SpecAR-UIKIT-accordion-body__description svg,
+.SpecAR-UIKIT-accordion-body__version svg,
+.SpecAR-UIKIT-accordion-body__mode svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.SpecAR-UIKIT-accordion-body__version {
+    margin-bottom: 20px;
+}
+.SpecAR-UIKIT-accordion-body__description {
+    margin-bottom: 10px;
+}
+.SpecAR-UIKIT-accordion-body__mode {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* =========== ACCORDION =========== */
+
+/* =========== SLIDER =========== */
+
+.SpecAR-UIKIT-slider {
+    display: grid;
+    grid-template-columns: minmax(max-content, 350px) 1fr;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.SpecAR-UIKIT-slider__title {
+    font-size: 16px;
+}
+.SpecAR-UIKIT-slider input {
+    display: flex;
+    border-radius: 8px;
+    height: 10px;
+    width: minmax(300px, max-content);
+    outline: none;
+    cursor: pointer;
+    accent-color: var(--accent-color);
+}
+
+/* =========== SLIDER =========== */
+
+/* =========== SELECT =========== */
+.SpecAR-UIKIT-select {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 32px;
+}
+.SpecAR-UIKIT-select__title {
+    font-size: 16px;
+}
+.SpecAR-UIKIT-select__input {
+    background: var(--page-background-secondary-color);
+    border: 2px solid var(--accent-color);
+    padding: 10px;
+    margin-left: auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    height: 100%;
+    width: 120px;
+    white-space: nowrap;
+    color: var(--text-primary-color);
+    cursor: pointer;
+}
+/* =========== SELECT =========== */
+
+/* =========== COLOR =========== */
+.SpecAR-UIKIT-color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.SpecAR-UIKIT-color__title {
+    font-size: 16px;
+}
+.SpecAR-UIKIT-color input {
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: 2px solid var(--page-background-secondary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* =========== COLOR =========== */
+
+/* =========== DROPDOWN =========== */
+.SpecAR-UIKIT-dropDown {
+    position: relative;
+    display: inline-block;
+}
+.SpecAR-UIKIT-dropDown__content {
+    display: none;
+    position: absolute;
+    background: var(--page-background-secondary-color);
+    padding: 10px;
+    right: 0;
+    filter: brightness(1.3);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.SpecAR-UIKIT-dropDown__drop {
+    display: block;
+}
+
+.SpecAR-UIKIT-dropDown__button {
+    background: none;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    border: none;
+    height: 48px;
+}
+.SpecAR-UIKIT-dropDown__button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.SpecAR-UIKIT-dropDown__content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown {
+    z-index: 1001;
+}
+
+/* =========== DROPDOWN =========== */
+
+/*
+    Панель "Модули"
+*/
+.settings_body__content__pModule {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    overflow-y: scroll;
+}
+
+.settings_body__content__pModule::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.settings_body__content__pModule::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+.settings_body__content__pModule__moduleItem {
+    margin-bottom: 10px;
+}
+
+.settings_body__content__pModule__noModuleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.settings_body__content__pModule__noModuleContainer span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*
+    Панель "Профили"
+*/
+.settings_body__content__pProfile {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    overflow-y: scroll;
+}
+.settings_body__content__pProfile::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.settings_body__content__pProfile::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+.settings_body__content__pProfile__profileList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.settings_body__content__pProfile__profileList__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.settings_body__content__pProfile__profileList__select {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    border: 1px solid rgba(187, 187, 187, 0.175);
+    background: var(--page-background-secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.settings_body__content__pProfile__profileList__select img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--icon-color);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.settings_body__content__pProfile__profileList__menu {
+    background: var(--page-background-secondary-color);
+}
+.settings_body__content__pProfile__profileList__menu li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.settings_body__content__pProfile__profileList__menu li a img {
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--icon-color);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.settings_body__content__pProfile__profileList__menu li a svg {
+    width: 32px;
+    height: 32px;
+    color: var(--icon-color);
+    margin-right: 10px;
+}
+.settings_body__content__pProfile__profileSettings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+}
+.settings_body__content__pProfile__profileSettings__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid var(--icon-color);
+    border-radius: 50%;
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar__badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-color);
+    width: 64px;
+    height: 64px;
+    top: -30px !important;
+    left: 85%;
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar__badge svg {
+    height: 32px;
+    width: 32px;
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar__controlsMenu {
+    background: var(--page-background-secondary-color);
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar__controlsMenu li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: var(--text-primary-color);
+}
+.settings_body__content__pProfile__profileSettings__avatarContainer__avatar__controlsMenu li svg {
+    width: 32px;
+    height: 32px;
+    color: var(--icon-color);
+    margin-right: 10px;
+}
+/*
+    Панель "Уведомления"
+*/
+.settings_body__content__pNotify {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    overflow-y: scroll;
+}
+.settings_body__content__pNotify::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.settings_body__content__pNotify::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+.settings_body__content__pNotify__noNotifyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.settings_body__content__pNotify__noNotifyContainer span {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.settings_body__content__pNotify__titleBox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.settings_body__content__pNotify__titleBox__title {
+    font-size: 20px;
+    margin-right: 10px;
+}
+.settings_body__content__pNotify__titleBox__dot {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--text-secondary-color);
+    margin-right: 10px;
+}
+.settings_body__content__pNotify__titleBox__count {
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+.settings_body__content__pNotify__titleBox__clearAll {
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+    transition: 0.1s;
+}
+.settings_body__content__pNotify__titleBox__clearAll:active {
+    color: var(--accent-color);
+}
+.settings_body__content__pNotify__list {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+}
+.settings_body__content__pNotify__list__item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
+}
+.settings_body__content__pNotify__list__item.notify-item-hide {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.settings_body__content__pNotify__list__item__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 40px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+.settings_body__content__pNotify__list__item__time span {
+    text-align: center;
+    color: var(--text-secondary-color);
+    filter: brightness(1.1);
+    font-size: 12px;
+}
+.settings_body__content__pNotify__list__item__content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: var(--page-background-secondary-color);
+    border-radius: 5px;
+}
+.settings_body__content__pNotify__list__item__content__iconBox {
+    margin-right: 15px;
+}
+.settings_body__content__pNotify__list__item__content__iconBox svg {
+    display: flex;
+    justify-content: center;
+    box-sizing: unset !important;
+    align-items: center;
+    padding: 10px;
+    width: 32px;
+    height: 32px;
+    background: var(--notify-background-color);
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    flex-shrink: 0;
+}
+.settings_body__content__pNotify__list__item__content__textBox {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+}
+.settings_body__content__pNotify__list__item__content__textBox span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.settings_body__content__pNotify__list__item__content__deleteBtn {
+    margin-left: 15px;
+    width: 32px;
+    height: 32px;
+    transition: 0.1s;
+}
+.settings_body__content__pNotify__list__item__content__deleteBtn:active {
+    color: var(--accent-color);
+}
+/*
+    Панель "Об устройстве"
+*/
+
+.settings_body__content__pAbout {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    overflow-y: scroll;
+}
+.settings_body__content__pAbout::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.settings_body__content__pAbout::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+.settings_body__content__pAbout__updateBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: var(--page-background-secondary-color);
+}
+.settings_body__content__pAbout__updateBox:active {
+    filter: brightness(0.95);
+}
+.settings_body__content__pAbout__updateBox__logo {
+    width: 80px;
+    margin-left: 20px;
+}
+.settings_body__content__pAbout__updateBox__title {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 20px;
+}
+.settings_body__content__pAbout__updateBox__title__item {
+    margin-bottom: 5px;
+}
+.settings_body__content__pAbout__updateBox__title__item:last-child {
+    margin-bottom: 0;
+}
+.settings_body__content__pAbout__updateBox__title__newUpdate {
+    font-size: 20px;
+}
+.settings_body__content__pAbout__updateBox__title__isOfficial,
+.settings_body__content__pAbout__updateBox__title__version {
+    color: var(--text-secondary-color);
+}
+
+.settings_body__content__pAbout__infoBox {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: red;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: var(--page-background-secondary-color);
+}
+.settings_body__content__pAbout__infoBox:active {
+    filter: brightness(0.95);
+}
+.settings_body__content__pAbout__infoBox__title {
+    margin-left: 20px;
+}
+.settings_body__content__pAbout__infoBox__info {
+    text-align: right;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 200px;
+    color: var(--text-secondary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 
+    Панель "Основное"
+*/
+
+.settings_body__content__pMain {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 0;
+    overflow-y: scroll;
+}
+.settings_body__content__pMain::-webkit-scrollbar {
+    display: unset !important;
+    width: 8px;
+}
+.settings_body__content__pMain::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 20px;
+}
+
+.settings_body__content__pMain__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.settings_body__content__pMain__container__title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.settings-language-dropdown {
+    background: var(--page-background-secondary-color);
+    border: 2px solid var(--accent-color);
+    padding: 5px 10px;
+    margin-left: auto;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 13px;
+    height: 100%;
+    width: 120px;
+    white-space: nowrap;
+    color: var(--text-primary-color);
+    cursor: pointer;
+}
+.settings-language-dropdown-menu {
+    background: var(--page-background-secondary-color);
+}
+.settings-language-dropdown-menu li a {
+    color: var(--text-primary-color);
+}
+.webcam-video-flip-horizontal {
+    transform: scaleX(-1) rotate(90deg);
+    height: 1080px;
+}
+.swal2-fullscreen {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: var(--background-color) !important;
+}
+
+.swal2-fullscreen .swal2-popup .swal2-actions {
+    position: absolute;
+    bottom: -350px;
+}
+
+.swal2-fullscreen .swal2-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--background-color) !important;
+}
+
+/* Органы управление приложениями (App) */
+.Application-Controls-Container {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    right: 30px;
+}
+.Application-Controls-Container__exitButton {
+    display: flex;
+    width: 64px;
+    height: 64px;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent-color);
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 1002;
+}
+.Application-Controls-Container__exitButton:active {
+    filter: brightness(0.8);
+}
+
+.Application-Controls-Container__exitButton svg {
+    width: 80%;
+    height: 80%;
+    color: var(--icon-color);
+}
+
+.SpecAR-UIKIT-ProfileFaceModel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.SpecAR-UIKIT-ProfileFaceModel__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+.SpecAR-UIKIT-ProfileFaceModel__body svg {
+    margin-right: 10px;
+}

@@ -1,0 +1,6 @@
+{
+    "MODULE_SMARTHOME_NAME": "Умный дом",
+    "MODULE_SMARTHOME_DESCRIPTION": "Модуль, предоставляющий возможность интегрироваться в систему умный дом посредством приложения HomeAssistant",
+    "MODULE_SMARTHOME_CONTROLS_URL_TITLE": "URL сервера:",
+    "MODULE_SMARTHOME_CONTROLS_APIKEY_TITLE": "Ключ API:"
+}

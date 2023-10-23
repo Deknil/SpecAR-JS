@@ -1,0 +1,18 @@
+{
+    "MODULE_CLOCK_NAME": "Часы",
+    "MODULE_CLOCK_DESCRIPTION": "Виджет часов позволяет легко узнавать текущее время и дату без необходимости открытия приложения или браузера.",
+    "MODULE_CLOCK_POSITION_X": "Положение по горизонтали: ",
+    "MODULE_CLOCK_POSITION_Y": "Положение по вертикали: ",
+    "MODULE_CLOCK_JANUARY": "Январь",
+    "MODULE_CLOCK_FEBRUARY": "Февраль",
+    "MODULE_CLOCK_MARCH": "Март",
+    "MODULE_CLOCK_APRIL": "Апрель",
+    "MODULE_CLOCK_MAY": "Май",
+    "MODULE_CLOCK_JUNE": "Июнь",
+    "MODULE_CLOCK_JULY": "Июль",
+    "MODULE_CLOCK_AUGUST": "Август",
+    "MODULE_CLOCK_SEPTEMBER": "Сентябрь",
+    "MODULE_CLOCK_OCTOBER": "Октябрь",
+    "MODULE_CLOCK_NOVEMBER": "Ноябрь",
+    "MODULE_CLOCK_DECEMBER": "Декабрь"
+}

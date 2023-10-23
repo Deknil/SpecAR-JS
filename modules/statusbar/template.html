@@ -1,0 +1,128 @@
+<div class="statusbar-module-container" id="{{containerID}}">
+    <img
+        class="statusbar-module-container__avatar"
+        id="statusbar-module-container-avatar"
+        src="{{SpecAR.Profile.activeProfile.avatarPath | default(SpecAR.Profile.defaultProfile.avatarPath)}}"
+        alt="Profile Avatar"
+    />
+    <div class="statusbar-module-container__controls">
+        <!-- Notify -->
+        <a
+            href="#"
+            class="btn position-relative statusbar-module-container__controls__notify"
+            onclick="SpecAR.Navigation.changeRoute('SETTINGS', 'pNotify')"
+        >
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                <path
+                    fill="currentColor"
+                    d="M21 19v1H3v-1l2-2v-6c0-3.1 2.03-5.83 5-6.71V4a2 2 0 0 1 2-2a2 2 0 0 1 2 2v.29c2.97.88 5 3.61 5 6.71v6l2 2m-7 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2"
+                />
+            </svg>
+            {% if SpecAR.Notify.countNotify > 0 %}
+            <span
+                id="statusbar-module-container-notify-badge"
+                class="position-absolute top-20 start-80 translate-middle badge rounded-pill statusbar-module-container__controls__notify__badge"
+            >
+                {{SpecAR.Notify.countNotify}}
+            </span>
+            {% endif %}
+        </a>
+        <!-- Wifi -->
+        <div class="btn-group dropdown statusbar-module-container__controls__wifi">
+            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="m6.35 15.35l-2.1-2.15q1.475-1.475 3.463-2.337T12 10q2.3 0 4.288.875t3.462 2.375l-2.1 2.1q-1.1-1.1-2.55-1.725T12 13q-1.65 0-3.1.625T6.35 15.35ZM2.1 11.1L0 9q2.3-2.35 5.375-3.675T12 4q3.55 0 6.625 1.325T24 9l-2.1 2.1q-1.925-1.925-4.463-3.013T12 7Q9.1 7 6.562 8.088T2.1 11.1ZM12 21l3.525-3.55q-.675-.675-1.575-1.063T12 16q-1.05 0-1.95.388T8.475 17.45L12 21Z"
+                    />
+                </svg>
+            </button>
+            <ul class="dropdown-menu statusbar-module-container__controls__wifi__connection-list">
+                {% if data.curConnection %}
+                <li onclick="SpecAR.moduleList['{{containerID}}'].disconnectWifi()">
+                    <div class="dropdown-item statusbar-module-container__controls__wifi__connection-list__current-connect">
+                        <svg
+                            class="statusbar-module-container__controls__wifi__connection-list__current-connect__wifiIcon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="40"
+                            height="40"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="m6.35 15.35l-2.1-2.15q1.475-1.475 3.463-2.337T12 10q2.3 0 4.288.875t3.462 2.375l-2.1 2.1q-1.1-1.1-2.55-1.725T12 13q-1.65 0-3.1.625T6.35 15.35ZM2.1 11.1L0 9q2.3-2.35 5.375-3.675T12 4q3.55 0 6.625 1.325T24 9l-2.1 2.1q-1.925-1.925-4.463-3.013T12 7Q9.1 7 6.562 8.088T2.1 11.1ZM12 21l3.525-3.55q-.675-.675-1.575-1.063T12 16q-1.05 0-1.95.388T8.475 17.45L12 21Z"
+                            />
+                        </svg>
+                        <span class="statusbar-module-container__controls__wifi__connection-list__current-connect__wifiSSID">
+                            {{data.curConnection}}
+                        </span>
+                        <svg
+                            class="statusbar-module-container__controls__wifi__connection-list__current-connect__disconnect"
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                        >
+                            <path
+                                fill="currentColor"
+                                d="M17.78 2.22a.75.75 0 0 1 0 1.06l-1.445 1.446a4.037 4.037 0 0 1-.481 5.127l-.3.3l-.003.003l-.309.309a1.05 1.05 0 0 1-1.484 0L9.535 6.242a1.05 1.05 0 0 1 0-1.485l.611-.61a4.04 4.04 0 0 1 5.128-.481L16.72 2.22a.75.75 0 0 1 1.06 0Zm-9 6.25a.75.75 0 0 1 0 1.06l-1.27 1.272l1.69 1.69l1.27-1.272a.75.75 0 1 1 1.061 1.06l-1.276 1.277a1.49 1.49 0 0 1-.1 1.997l-.3.3a4.037 4.037 0 0 1-5.128.48L3.28 17.78a.75.75 0 0 1-1.06-1.06l1.445-1.446a4.037 4.037 0 0 1 .481-5.127l.3-.3a1.49 1.49 0 0 1 1.997-.1L7.72 8.47a.75.75 0 0 1 1.06 0Z"
+                            />
+                        </svg>
+                    </div>
+                </li>
+                {% else %}
+                <li>
+                    <div class="dropdown-item statusbar-module-container__controls__wifi__connection-list__noconnection">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M20 18v-8h2v8h-2Zm1 4q-.425 0-.713-.288T20 21q0-.425.288-.713T21 20q.425 0 .713.288T22 21q0 .425-.288.713T21 22Zm-9 0q-.375 0-.738-.15t-.662-.45l-8-8q-.3-.3-.45-.663T2 12q0-.375.15-.738t.45-.662l8-8q.3-.3.663-.45T12 2q.375 0 .738.15t.662.45L18 7.2v3.6l-6-6L4.8 12l7.2 7.2l6-6v3.6l-4.6 4.6q-.3.3-.663.45T12 22Zm0-5.6L7.6 12L12 7.6l4.4 4.4l-4.4 4.4Z"
+                            />
+                        </svg>
+                        <span>{{SpecAR.Translator.translate('MODULE_STATUSBAR_NO_CONNECTION')}}</span>
+                    </div>
+                </li>
+                {% endif %}
+                <li><hr class="dropdown-divider" /></li>
+                <li onclick="SpecAR.moduleList['{{containerID}}'].networkManager()">
+                    <div class="dropdown-item statusbar-module-container__controls__wifi__connection-list__netmanager">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M8.475 17.45q.55-.55 1.238-.9t1.462-.475q-.125.475-.2.95T10.9 18q0 .6.088 1.175t.287 1.1l-2.8-2.825Zm-2.125-2.1l-2.1-2.15q1.55-1.55 3.55-2.375T12 10q1.225 0 2.4.263t2.25.762q-1.1.2-2.038.725t-1.687 1.3q-.225-.025-.463-.038T12 13q-1.6 0-3.063.613T6.35 15.35ZM2.1 11.1L0 9q2.375-2.425 5.488-3.713T12 4q3.4 0 6.513 1.288T24 9l-2.1 2.1q-1.975-1.975-4.538-3.038T12 7Q9.2 7 6.637 8.063T2.1 11.1ZM19 13l.3 1.5q.3.125.563.263t.537.337l1.45-.45l1 1.7l-1.15 1q.05.3.05.65t-.05.65l1.15 1l-1 1.7l-1.45-.45q-.275.2-.537.338t-.563.262L19 23h-2l-.3-1.5q-.3-.125-.563-.263T15.6 20.9l-1.45.45l-1-1.7l1.15-1q-.05-.3-.05-.65t.05-.65l-1.15-1l1-1.7l1.45.45q.275-.2.538-.337t.562-.263L17 13h2Zm-1 3q-.825 0-1.413.588T16 18q0 .825.588 1.413T18 20q.825 0 1.413-.588T20 18q0-.825-.588-1.413T18 16Z"
+                            />
+                        </svg>
+                        <span>{{SpecAR.Translator.translate('MODULE_STATUSBAR_NETMANAGER')}}</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Sound -->
+        <div class="btn-group dropend statusbar-module-container__controls__sound">
+            <button type="button" class="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                    <path
+                        fill="currentColor"
+                        d="M391 256c0-35.5-21.7-65.9-52.5-78.7l-16.4 39.4c15.4 6.4 26.2 21.6 26.2 39.4c0 17.7-10.8 32.9-26.2 39.4l16.4 39.4c30.8-13 52.5-43.4 52.5-78.9zM371.3 98.5l-16.4 39.4c46.3 19.3 78.8 64.9 78.8 118.1c0 53.3-32.5 98.8-78.8 118.1l16.4 39.4c61.7-25.7 105-86.5 105-157.5S433 124.2 371.3 98.5zM49.7 149.3v213.3H135L284.3 512V0L135 149.3H49.7z"
+                    />
+                </svg>
+            </button>
+            <ul class="dropdown-menu">
+                <div class="SpecAR-UIKIT-slider">
+                    <input
+                        type="range"
+                        name="SOUND_MAIN"
+                        id="statusbar-module-container-sound"
+                        min="0"
+                        max="100"
+                        step="1"
+                        value="{{SpecAR.Config.getData.mainVolume}}"
+                        onchange="(function(){
+                            SpecAR.Config.API.setVolumeMain(event.target.value)
+                            window.dispatchEvent(new Event('onStatusBarSoundChanged'))})()"
+                    />
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>

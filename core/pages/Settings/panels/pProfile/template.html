@@ -1,0 +1,221 @@
+<div class="settings_body__content__pProfile">
+    <div class="settings_body__content__pProfile__profileList">
+        <span class="settings_body__content__pProfile__profileList__title"> {{translator('PPROFILE__ACTIVE_PROFILE')}} </span>
+        <div class="dropdown">
+            <button
+                class="settings_body__content__pProfile__profileList__select dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <img
+                    src="{{SpecAR.Profile.activeProfile.avatarPath | default(SpecAR.Profile.defaultProfile.avatarPath)}}"
+                    width="32"
+                    height="32"
+                    alt="Profile Avatar"
+                />
+                {{SpecAR.Profile.activeProfile.profileName}}
+            </button>
+            <ul class="dropdown-menu settings_body__content__pProfile__profileList__menu" id="settings-pProfile-profileList">
+                {% for ID, profile in SpecAR.Profile.profileList %}
+                <li>
+                    <a class="dropdown-item" data-profile-id="{{ID}}" href="#" onclick="SpecAR.Profile.changeProfileByID('{{ID}}')">
+                        <img
+                            src="{{SpecAR.Profile.profileList[ID].avatarPath | default(SpecAR.Profile.defaultProfile.avatarPath)}}"
+                            width="32"
+                            height="32"
+                            alt="Profile Avatar"
+                        />
+                        <span> {{ SpecAR.Profile.profileList[ID].profileName }} </span>
+                    </a>
+                </li>
+                {% endfor %}
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                    <a class="dropdown-item" href="#" onclick="SpecAR.Profile.createProfile()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512">
+                            <path
+                                fill="currentColor"
+                                d="M459.94 53.25a16.06 16.06 0 0 0-23.22-.56L424.35 65a8 8 0 0 0 0 11.31l11.34 11.32a8 8 0 0 0 11.34 0l12.06-12c6.1-6.09 6.67-16.01.85-22.38ZM399.34 90L218.82 270.2a9 9 0 0 0-2.31 3.93L208.16 299a3.91 3.91 0 0 0 4.86 4.86l24.85-8.35a9 9 0 0 0 3.93-2.31L422 112.66a9 9 0 0 0 0-12.66l-9.95-10a9 9 0 0 0-12.71 0Z"
+                            />
+                            <path
+                                fill="currentColor"
+                                d="M386.34 193.66L264.45 315.79A41.08 41.08 0 0 1 247.58 326l-25.9 8.67a35.92 35.92 0 0 1-44.33-44.33l8.67-25.9a41.08 41.08 0 0 1 10.19-16.87l122.13-121.91a8 8 0 0 0-5.65-13.66H104a56 56 0 0 0-56 56v240a56 56 0 0 0 56 56h240a56 56 0 0 0 56-56V199.31a8 8 0 0 0-13.66-5.65Z"
+                            />
+                        </svg>
+                        {{ translator('PPROFILE__CREATE_PROFILE') }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="settings_body__content__pProfile__profileSettings">
+        <span class="settings_body__content__pProfile__profileSettings__title"> {{translator('PPROFILE_SETTINGS')}} </span>
+        <div class="settings_body__content__pProfile__profileSettings__avatarContainer">
+            <div class="settings_body__content__pProfile__profileSettings__avatarContainer__avatar position-relative">
+                <img
+                    src="{{SpecAR.Profile.activeProfile.avatarPath | default(SpecAR.Profile.defaultProfile.avatarPath)}}"
+                    alt="Profile Avatar"
+                />
+                {% if SpecAR.Profile.activeProfile.id != 'Guest' %}
+                <div class="dropdown">
+                    <span
+                        class="settings_body__content__pProfile__profileSettings__avatarContainer__avatar__badge position-absolute translate-middle badge rounded-pill"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                fill="currentColor"
+                                d="M12 17.5q1.875 0 3.188-1.313T16.5 13q0-1.875-1.313-3.188T12 8.5q-1.875 0-3.188 1.313T7.5 13q0 1.875 1.313 3.188T12 17.5Zm0-1l-1.1-2.4L8.5 13l2.4-1.1L12 9.5l1.1 2.4l2.4 1.1l-2.4 1.1l-1.1 2.4ZM4 21q-.825 0-1.413-.588T2 19V7q0-.825.588-1.413T4 5h3.15L9 3h6l1.85 2H20q.825 0 1.413.588T22 7v12q0 .825-.588 1.413T20 21H4Z"
+                            />
+                        </svg>
+                    </span>
+                    <ul class="dropdown-menu settings_body__content__pProfile__profileSettings__avatarContainer__avatar__controlsMenu">
+                        {% if SpecAR.Profile.activeProfile.avatarPath != SpecAR.Profile.defaultProfile.avatarPath%}
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="SpecAR.Profile.takePhotoByID(SpecAR.Profile.activeProfile.id)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="M12 17.5q1.875 0 3.188-1.313T16.5 13q0-1.875-1.313-3.188T12 8.5q-1.875 0-3.188 1.313T7.5 13q0 1.875 1.313 3.188T12 17.5Zm0-1l-1.1-2.4L8.5 13l2.4-1.1L12 9.5l1.1 2.4l2.4 1.1l-2.4 1.1l-1.1 2.4ZM4 21q-.825 0-1.413-.588T2 19V7q0-.825.588-1.413T4 5h3.15L9 3h6l1.85 2H20q.825 0 1.413.588T22 7v12q0 .825-.588 1.413T20 21H4Z"
+                                    />
+                                </svg>
+                                {{translator('PPROFILE_AVATAR_PHOTO')}}
+                            </a>
+                        </li>
+                        <li>
+                            <input type="file" id="pProfile-file-input" accept="image/png, image/jpeg" style="display: none" />
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="SpecAR.Profile.choosePhotoByID(SpecAR.Profile.activeProfile.id)"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="M5 21q-.825 0-1.413-.588T3 19V7h14v14H5Zm14 0v-2h2q0 .825-.588 1.413T19 21ZM5 18h10l-3.4-4.5L9 17l-1.6-2.15L5 18Zm14-1v-2h2v2h-2Zm0-4v-2h2v2h-2Zm0-4V7h2v2h-2ZM3 5q0-.825.588-1.413T5 3v2H3Zm4 0V3h2v2H7Zm4 0V3h2v2h-2Zm4 0V3h2v2h-2Zm4 0V3q.825 0 1.413.588T21 5h-2Z"
+                                    />
+                                </svg>
+                                {{translator('PPROFILE_AVATAR_CHOOSE')}}
+                            </a>
+                        </li>
+                        {% if SpecAR.Profile.activeProfile.avatarPath and SpecAR.Profile.activeProfile.avatarPath != '' %}
+                        <li>
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="SpecAR.Profile.deletePhotoByID(SpecAR.Profile.activeProfile.id)"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="M15 18v-2h4v2h-4Zm0-8V8h7v2h-7Zm0 4v-2h6v2h-6ZM3 8H2V6h4V4.5h4V6h4v2h-1v9q0 .825-.588 1.413T11 19H5q-.825 0-1.413-.588T3 17V8Z"
+                                    />
+                                </svg>
+                                {{translator('PPROFILE_AVATAR_DELETE')}}
+                            </a>
+                        </li>
+                        {% endif%} {% else %}
+                        <li>
+                            <a class="dropdown-item" href="#" onclick="SpecAR.Profile.takePhotoByID(SpecAR.Profile.activeProfile.id)">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="M12 17.5q1.875 0 3.188-1.313T16.5 13q0-1.875-1.313-3.188T12 8.5q-1.875 0-3.188 1.313T7.5 13q0 1.875 1.313 3.188T12 17.5Zm0-1l-1.1-2.4L8.5 13l2.4-1.1L12 9.5l1.1 2.4l2.4 1.1l-2.4 1.1l-1.1 2.4ZM4 21q-.825 0-1.413-.588T2 19V7q0-.825.588-1.413T4 5h3.15L9 3h6l1.85 2H20q.825 0 1.413.588T22 7v12q0 .825-.588 1.413T20 21H4Z"
+                                    />
+                                </svg>
+                                {{translator('PPROFILE_AVATAR_PHOTO')}}
+                            </a>
+                        </li>
+                        <li>
+                            <input type="file" id="pProfile-file-input" accept="image/png, image/jpeg" style="display: none" />
+                            <a
+                                class="dropdown-item"
+                                href="#"
+                                onclick="SpecAR.Profile.choosePhotoByID(SpecAR.Profile.activeProfile.id)"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                                    <path
+                                        fill="currentColor"
+                                        d="M5 21q-.825 0-1.413-.588T3 19V7h14v14H5Zm14 0v-2h2q0 .825-.588 1.413T19 21ZM5 18h10l-3.4-4.5L9 17l-1.6-2.15L5 18Zm14-1v-2h2v2h-2Zm0-4v-2h2v2h-2Zm0-4V7h2v2h-2ZM3 5q0-.825.588-1.413T5 3v2H3Zm4 0V3h2v2H7Zm4 0V3h2v2h-2Zm4 0V3h2v2h-2Zm4 0V3q.825 0 1.413.588T21 5h-2Z"
+                                    />
+                                </svg>
+                                {{translator('PPROFILE_AVATAR_CHOOSE')}}
+                            </a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        <div class="settings_body__content__pProfile__profileSettings__controls">
+            <div class="SpecAR-UIKIT-textEntry">
+                <span class="SpecAR-UIKIT-textEntry__title">{{translator('PPROFILE_PROFILE_CONTROLS_PROFILEID')}}</span>
+                <input
+                    class="SpecAR-UIKIT-textEntry__input"
+                    disabled
+                    type="text"
+                    id="settings-pProfile-profile-name"
+                    value="{{SpecAR.Profile.activeProfile.id}}"
+                    data-profile-id="{{SpecAR.Profile.activeProfile.id}}"
+                />
+            </div>
+            <div class="SpecAR-UIKIT-textEntry">
+                <span class="SpecAR-UIKIT-textEntry__title">{{translator('PPROFILE_PROFILE_CONTROLS_PROFILENAME')}}</span>
+                <input class="SpecAR-UIKIT-textEntry__input" {% if SpecAR.Profile.activeProfile.id == 'Guest' %}disabled {% endif %}
+                type="text" id="settings-pProfile-profile-name" value="{{SpecAR.Profile.activeProfile.profileName}}"
+                onchange="SpecAR.Profile.changeProfileNameByID(this.dataset.profileId, this.value)"
+                data-profile-id="{{SpecAR.Profile.activeProfile.id}}"/>
+            </div>
+            {% if SpecAR.Profile.activeProfile.id != 'Guest' %}
+
+            <div class="SpecAR-UIKIT-ProfileFaceModel">
+                <span class="SpecAR-UIKIT-ProfileFaceModel__title">{{translator('PPROFILE_PROFILE_CONTROLS_MODELFACE_TITLE')}}</span>
+                {% if SpecAR.Profile.activeProfile.faceModelPath == '' or not SpecAR.Profile.activeProfile.faceModelPath %}
+                <div
+                    class="SpecAR-UIKIT-ProfileFaceModel__body SpecAR-UIKIT-ProfileFaceModel__body--notFound"
+                    onclick="SpecAR.Profile.trainFaceProfileByID(SpecAR.Profile.activeProfile.id)"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                        <g
+                            fill="none"
+                            fill-rule="evenodd"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            transform="translate(2 2)"
+                        >
+                            <circle cx="8.5" cy="8.5" r="8" />
+                            <path d="m5.5 5.5l6 6m0-6l-6 6" />
+                        </g>
+                    </svg>
+                    <span>{{translator('PPROFILE_PROFILE_CONTROLS_MODELFACE_NOTFOUNDED')}}</span>
+                </div>
+                {% else %}
+                <div
+                    class="SpecAR-UIKIT-ProfileFaceModel__body SpecAR-UIKIT-ProfileFaceModel__body--notFound"
+                    onclick="SpecAR.Profile.trainFaceProfileByID(SpecAR.Profile.activeProfile.id)"
+                >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="currentColor" d="m14.83 4.89l1.34.94l-5.81 8.38H9.02L5.78 9.67l1.34-1.25l2.57 2.4z" />
+                    </svg>
+                    <span>{{translator('PPROFILE_PROFILE_CONTROLS_MODELFACE_FOUNDED')}}</span>
+                </div>
+                {% endif %}
+            </div>
+            <a class="SpecAR-UIKIT-button" onclick="SpecAR.Profile.deleteProfileByID(SpecAR.Profile.activeProfile.id)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path
+                        fill="currentColor"
+                        d="M15 18v-2h4v2h-4Zm0-8V8h7v2h-7Zm0 4v-2h6v2h-6ZM3 8H2V6h4V4.5h4V6h4v2h-1v9q0 .825-.588 1.413T11 19H5q-.825 0-1.413-.588T3 17V8Z"
+                    />
+                </svg>
+                <span>{{translator('PPROFILE_PROFILE_CONTROLS_PROFILE_DELETE')}}</span>
+            </a>
+            {% endif %}
+        </div>
+    </div>
+</div>

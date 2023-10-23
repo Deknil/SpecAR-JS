@@ -1,0 +1,13 @@
+[Unit]
+Description=SpecAR Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=/bin/bash /home/gunzar/SpecAR/start.sh
+User=gunzar
+
+[Install]
+WantedBy=multi-user.target

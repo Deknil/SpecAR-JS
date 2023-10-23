@@ -1,0 +1,47 @@
+{
+    "name": "specar",
+    "version": "1.0",
+    "description": "A smart mirror platform",
+    "main": "main.js",
+    "author": {
+        "name": "Gunzar LLC.",
+        "email": "gunzar@list.ru",
+        "url": "https://gunzar.tech"
+    },
+    "contributors": [
+        "CEO Gunzar LLC. - Sushko Daniil Igorevich"
+    ],
+    "license": "GNU GPL3",
+    "keywords": [
+        "Smart Mirror",
+        "Mirror Platfrom",
+        "AI",
+        "AR",
+        "ElectronJS"
+    ],
+    "private": true,
+    "scripts": {
+        "app:install": "npm install --no-audit --no-fund --no-update-notifier --only=prod --omit=dev",
+        "app:install-dev": "npm install --no-audit --no-fund --no-update-notifier",
+        "app:start": "cross-env NODE_ENV=production electron .",
+        "app:start-dev": "cross-env NODE_ENV=development electron ."
+    },
+    "dependencies": {
+        "axios": "^1.4.0",
+        "cross-env": "^7.0.3",
+        "electron": "^24.1.2",
+        "fast-levenshtein": "^3.0.0",
+        "moment": "^2.29.4",
+        "morphdom": "^2.7.0",
+        "nunjucks": "^3.2.4",
+        "winston": "^3.8.2"
+    },
+    "devDependencies": {
+        "electron-reloader": "^1.2.3"
+    },
+    "engines": {
+        "node": ">=v18.12.1",
+        "npm": ">=9.4.2",
+        "yarn": ">=1.22.19"
+    }
+}

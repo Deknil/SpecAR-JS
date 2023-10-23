@@ -1,0 +1,12 @@
+{
+    "MODULE_STATUSBAR_NAME": "Строка состояния",
+    "MODULE_STATUSBAR_DESCRIPTION": "Строка состояния предоставляет быстрый доступ к основным функциям и информации вашего устройства. Он обеспечивает удобное управление сетью Wi-Fi, регулирование звуковых настроек, просмотр количества непрочитанных уведомлений и отображение аватара активного профиля пользователя.",
+    "MODULE_STATUSBAR_NO_CONNECTION": "Нет подключения к WiFi",
+    "MODULE_STATUSBAR_WIFI-DISCONNECT": "Вы действительно хотите отключить сеть WiFi?",
+    "MODULE_STATUSBAR_WIFI-DISCONNECT_CONFIRM": "Отключить",
+    "MODULE_STATUSBAR_WIFI-DISCONNECT_SUCCESS": "Разорвано соединение с сетью WiFi '{wifiName}'",
+    "MODULE_STATUSBAR_NETMANAGER_LOADING": "Загрузка данных...",
+    "MODULE_STATUSBAR_NETMANAGER_CONNECT": "Подключить",
+    "MODULE_STATUSBAR_NETMANAGER_PASS_PLACEHOLDER": "Пароль от сети",
+    "MODULE_STATUSBAR_NETMANAGER": "Управление сетями"
+}

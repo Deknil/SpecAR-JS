@@ -1,0 +1,10 @@
+<div class="settings_body__content__pModule" id="panel-modulesContainer">
+    {% if getKeys(SpecAR.moduleList).length == 0 %}
+    <div class="settings_body__content__pModule__noModuleContainer">
+        <span>{{translator('PMODULE_NO_MODULE')}}</span>
+    </div>
+    {% endif %}
+    <div class="accordion" id="panel-modules-accordion-container">
+        {% for ID, module in SpecAR.moduleList %} {{module.getControlTemplate() | safe }} {% endfor %}
+    </div>
+</div>

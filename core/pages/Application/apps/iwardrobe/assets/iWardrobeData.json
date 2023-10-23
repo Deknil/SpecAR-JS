@@ -1,0 +1,1410 @@
+{
+    "Мужчина": {
+        "Футболки": [
+            {
+                "title": "Без дизайна",
+                "price": "1510₽",
+                "image": "man/tshirts/1.png"
+            },
+            {
+                "title": "Zero two anime tyan",
+                "price": "1290₽",
+                "image": "man/tshirts/2.png"
+            },
+            {
+                "title": "Ребекка и иероглифы - Киберпанк аниме",
+                "price": "1210₽",
+                "image": "man/tshirts/3.png"
+            },
+            {
+                "title": "Разлом неоновых плит в трехмерном",
+                "price": "1210₽",
+                "image": "man/tshirts/4.png"
+            },
+            {
+                "title": "Sawn people",
+                "price": "1210₽",
+                "image": "man/tshirts/5.png"
+            },
+            {
+                "title": "Краска и ничего лишнего",
+                "price": "1210₽",
+                "image": "man/tshirts/6.png"
+            },
+            {
+                "title": "Аниме Tokyo Revengers: дракон",
+                "price": "1210₽",
+                "image": "man/tshirts/7.png"
+            },
+            {
+                "title": "Кот геймер",
+                "price": "1290₽",
+                "image": "man/tshirts/8.png"
+            },
+            {
+                "title": "GTA Vice City",
+                "price": "1490₽",
+                "image": "man/tshirts/9.png"
+            },
+            {
+                "title": "самурай кот",
+                "price": "1560₽",
+                "image": "man/tshirts/10.png"
+            }
+        ],
+        "Толстовки с капюшоном": [
+            {
+                "title": "Без дизайна",
+                "price": "3680₽",
+                "image": "man/hoodie/1.png"
+            },
+            {
+                "title": "Russia герб (двусторонняя)",
+                "price": "3795₽",
+                "image": "man/hoodie/2.png"
+            },
+            {
+                "title": "Cyperpunk 2077 Japan tech ",
+                "price": "3795₽",
+                "image": "man/hoodie/3.png"
+            },
+            {
+                "title": "CYBERPUNK 2077 демон SAMURAI ",
+                "price": "3795₽",
+                "image": "man/hoodie/4.png"
+            },
+            {
+                "title": "FC SPARTAK",
+                "price": "3795₽",
+                "image": "man/hoodie/5.png"
+            },
+            {
+                "title": "Осторожно! ",
+                "price": "3290₽",
+                "image": "man/hoodie/6.png"
+            },
+            {
+                "title": "Free Rick",
+                "price": "3545₽",
+                "image": "man/hoodie/7.png"
+            },
+            {
+                "title": "Pepe simp",
+                "price": "3795₽",
+                "image": "man/hoodie/8.png"
+            },
+            {
+                "title": "Kokushibo Tsugikuni - демон",
+                "price": "3795₽",
+                "image": "man/hoodie/9.png"
+            },
+            {
+                "title": "Гуси ",
+                "price": "3795₽",
+                "image": "man/hoodie/10.png"
+            }
+        ],
+        "Толстовки": [
+            {
+                "title": "Без дизайна",
+                "price": "2510₽",
+                "image": "man/sweatshirts/1.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "1930₽",
+                "image": "man/sweatshirts/2.png"
+            },
+            {
+                "title": "Однотонный 6",
+                "price": "2510₽",
+                "image": "man/sweatshirts/3.png"
+            },
+            {
+                "title": "Waifu",
+                "price": "1935₽",
+                "image": "man/sweatshirts/4.png"
+            },
+            {
+                "title": "Имперский флаг и герб",
+                "price": "1990₽",
+                "image": "man/sweatshirts/5.png"
+            },
+            {
+                "title": "ЪУЪ СЪУКА самурай",
+                "price": "2590₽",
+                "image": "man/sweatshirts/6.png"
+            },
+            {
+                "title": "Серая материя",
+                "price": "1990₽",
+                "image": "man/sweatshirts/7.png"
+            },
+            {
+                "title": "Я делаю что хочу",
+                "price": "2590₽",
+                "image": "man/sweatshirts/8.png"
+            },
+            {
+                "title": "КАТАНА НА ФОНЕ САКУРЫ | JAPANESE KATANA (Z)",
+                "price": "2590₽",
+                "image": "man/sweatshirts/9.png"
+            },
+            {
+                "title": "кот не сегодня",
+                "price": "2590₽",
+                "image": "man/sweatshirts/10.png"
+            }
+        ],
+        "Лонгсливы": [
+            {
+                "title": "Без дизайна",
+                "price": "1690₽",
+                "image": "man/longsleeves/1.png"
+            },
+            {
+                "title": "Смокинг",
+                "price": "1590₽",
+                "image": "man/longsleeves/2.png"
+            },
+            {
+                "title": "скелет и тепло души",
+                "price": "1590₽",
+                "image": "man/longsleeves/3.png"
+            },
+            {
+                "title": "Парень с собакой (Banksy)",
+                "price": "1690₽",
+                "image": "man/longsleeves/4.png"
+            },
+            {
+                "title": "Свитер Курта Кобейна",
+                "price": "1590₽",
+                "image": "man/longsleeves/5.png"
+            },
+            {
+                "title": "Косуха Байкерская",
+                "price": "1590₽",
+                "image": "man/longsleeves/6.png"
+            },
+            {
+                "title": "Неоновый японский самурай",
+                "price": "1590₽",
+                "image": "man/longsleeves/7.png"
+            },
+            {
+                "title": "Igor ty za*bal свитер",
+                "price": "1540₽",
+                "image": "man/longsleeves/8.png"
+            },
+            {
+                "title": "Камуфляж Россия",
+                "price": "1590₽",
+                "image": "man/longsleeves/9.png"
+            },
+            {
+                "title": "DEMON ZXC",
+                "price": "1590₽",
+                "image": "man/longsleeves/10.png"
+            }
+        ],
+        "Майки": [
+            {
+                "title": "Light weight babby",
+                "price": "990₽",
+                "image": "man/tanks/1.png"
+            },
+            {
+                "title": "Ghost of Tsushima: призрак на фоне красного солнца",
+                "price": "1290₽",
+                "image": "man/tanks/2.png"
+            },
+            {
+                "title": "BILLY HERRINGTON / БИЛЛИ ХЕРРИНГТОН / SPARTA / СПАРТА",
+                "price": "1290₽",
+                "image": "man/tanks/3.png"
+            },
+            {
+                "title": "Тхэквондо ИТФ | Taekwondo ITF",
+                "price": "990₽",
+                "image": "man/tanks/4.png"
+            },
+            {
+                "title": "MONSTER ENERGY",
+                "price": "1290₽",
+                "image": "man/tanks/5.png"
+            },
+            {
+                "title": "Basketball - NBA logo",
+                "price": "990₽",
+                "image": "man/tanks/6.png"
+            },
+            {
+                "title": "Тай-дай",
+                "price": "1290₽",
+                "image": "man/tanks/7.png"
+            },
+            {
+                "title": "Без дизайна",
+                "price": "960₽",
+                "image": "man/tanks/8.png"
+            },
+            {
+                "title": "Boss of GYM (акварель)",
+                "price": "1290₽",
+                "image": "man/tanks/9.png"
+            },
+            {
+                "title": "Бык Дуэйн Скала Джонсон ",
+                "price": "990₽",
+                "image": "man/tanks/10.png"
+            }
+        ],
+        "Штаны": [
+            {
+                "title": "Без дизайна",
+                "price": "1540₽",
+                "image": "man/trousers_shorts/1.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "2250₽",
+                "image": "man/trousers_shorts/2.png"
+            },
+            {
+                "title": "Аниме Tokyo Revengers: дракон",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/3.png"
+            },
+            {
+                "title": "Carbon Fiber Big",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/4.png"
+            },
+            {
+                "title": "THE WITCHER.",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/5.png"
+            },
+            {
+                "title": "Его Ворсейшество",
+                "price": "2250₽",
+                "image": "man/trousers_shorts/6.png"
+            },
+            {
+                "title": "MONSTER ENERGY ",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/7.png"
+            },
+            {
+                "title": "Чёрно-белый",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/8.png"
+            },
+            {
+                "title": "Разлом неоновых плит в трехмерном",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/9.png"
+            },
+            {
+                "title": "Эмблемы рок групп",
+                "price": "2320₽",
+                "image": "man/trousers_shorts/10.png"
+            }
+        ],
+        "Спортивные шорты": [
+            {
+                "title": "Cyberpunk 2077: броня синяя сталь",
+                "price": "2090₽",
+                "image": "man/shorts_sport/1.png"
+            },
+            {
+                "title": "JoJo’s Bizarre Adventure",
+                "price": "2090₽",
+                "image": "man/shorts_sport/2.png"
+            },
+            {
+                "title": "ЪУЪ СЪУКА.",
+                "price": "2090₽",
+                "image": "man/shorts_sport/3.png"
+            },
+            {
+                "title": "КРАСНО БЕЛЫЕ РУНЫ ",
+                "price": "2090₽",
+                "image": "man/shorts_sport/4.png"
+            },
+            {
+                "title": "AUDI | АУДИ",
+                "price": "2090₽",
+                "image": "man/shorts_sport/5.png"
+            },
+            {
+                "title": "Черный Клевер объятый огнем",
+                "price": "2090₽",
+                "image": "man/shorts_sport/6.png"
+            },
+            {
+                "title": "Heroes III",
+                "price": "2090₽",
+                "image": "man/shorts_sport/7.png"
+            },
+            {
+                "title": "Honda SPORT",
+                "price": "2090₽",
+                "image": "man/shorts_sport/8.png"
+            },
+            {
+                "title": "THE LAST OF US (Z)",
+                "price": "2090₽",
+                "image": "man/shorts_sport/9.png"
+            },
+            {
+                "title": "НЕОНОВЫЕ БРЫЗГИ КРАСКИ",
+                "price": "2090₽",
+                "image": "man/shorts_sport/10.png"
+            }
+        ],
+        "Бомберы": [
+            {
+                "title": "Горячая линия Майами",
+                "price": "3590₽",
+                "image": "man/bombers/1.png"
+            },
+            {
+                "title": "Carbon Fiber Big",
+                "price": "3590₽",
+                "image": "man/bombers/2.png"
+            },
+            {
+                "title": "Drive - Скорпион - Ryan Gosling white scorpion jacket",
+                "price": "3590₽",
+                "image": "man/bombers/3.png"
+            },
+            {
+                "title": "Cyberpunk 2077: броня синяя сталь",
+                "price": "3590₽",
+                "image": "man/bombers/4.png"
+            },
+            {
+                "title": "Эмблемы рок групп",
+                "price": "3590₽",
+                "image": "man/bombers/5.png"
+            },
+            {
+                "title": "Carbon",
+                "price": "3590₽",
+                "image": "man/bombers/6.png"
+            },
+            {
+                "title": "Камуфляж Россия",
+                "price": "3590₽",
+                "image": "man/bombers/7.png"
+            },
+            {
+                "title": "PORSCHE | ПОРШЕ",
+                "price": "3590₽",
+                "image": "man/bombers/8.png"
+            },
+            {
+                "title": "BMW 2020 Carbon Fiber",
+                "price": "3590₽",
+                "image": "man/bombers/9.png"
+            },
+            {
+                "title": "Philadelphia Flyers",
+                "price": "3590₽",
+                "image": "man/bombers/10.png"
+            }
+        ],
+        "Нижнее белье": [
+            {
+                "title": "Егор Крид",
+                "price": "1025₽",
+                "image": "man/underwear/1.png"
+            },
+            {
+                "title": "Поцелуй бабочек",
+                "price": "1230₽",
+                "image": "man/underwear/2.png"
+            },
+            {
+                "title": "Японская анимация",
+                "price": "1025₽",
+                "image": "man/underwear/3.png"
+            },
+            {
+                "title": "Камуфляж Россия",
+                "price": "1230₽",
+                "image": "man/underwear/4.png"
+            },
+            {
+                "title": "С мишкой на замочке молнии",
+                "price": "1025₽",
+                "image": "man/underwear/5.png"
+            },
+            {
+                "title": "Вероника",
+                "price": "1025₽",
+                "image": "man/underwear/6.png"
+            },
+            {
+                "title": "Ахегао лица",
+                "price": "1025₽",
+                "image": "man/underwear/7.png"
+            },
+            {
+                "title": "Мудрое Таинственное Дерево",
+                "price": "1025₽",
+                "image": "man/underwear/8.png"
+            },
+            {
+                "title": "Shadow Fiend",
+                "price": "990₽",
+                "image": "man/underwear/9.png"
+            },
+            {
+                "title": "Пельмени",
+                "price": "1025₽",
+                "image": "man/underwear/10.png"
+            }
+        ],
+        "Бейсболки": [
+            {
+                "title": "Акула",
+                "price": "920₽",
+                "image": "shared/cap_trucker/1.png"
+            },
+            {
+                "title": "I love hot BEBRA | НАДПИСЬ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/2.png"
+            },
+            {
+                "title": "УТКА С НОЖОМ КРУГЛЯШ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/3.png"
+            },
+            {
+                "title": "Продюсер",
+                "price": "920₽",
+                "image": "shared/cap_trucker/4.png"
+            },
+            {
+                "title": "Slipknot logo",
+                "price": "890₽",
+                "image": "shared/cap_trucker/5.png"
+            },
+            {
+                "title": "Кот программист",
+                "price": "920₽",
+                "image": "shared/cap_trucker/6.png"
+            },
+            {
+                "title": "Кот с ножом ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/7.png"
+            },
+            {
+                "title": "ВДВ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/8.png"
+            },
+            {
+                "title": "Артём - с большой буквы",
+                "price": "920₽",
+                "image": "shared/cap_trucker/9.png"
+            },
+            {
+                "title": "Самый лучший папа",
+                "price": "920₽",
+                "image": "shared/cap_trucker/10.png"
+            }
+        ],
+        "Шапки": [
+            {
+                "title": "Cyberpunk 2077: броня синяя сталь",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/1.png"
+            },
+            {
+                "title": "конь на красном фоне",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/2.png"
+            },
+            {
+                "title": "BLEACH (НА СПИНЕ) | БЛИЧ",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/3.png"
+            },
+            {
+                "title": "Chelsea",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/4.png"
+            },
+            {
+                "title": "Уэнсдей - окно ночной витраж - текстура зерна",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/5.png"
+            },
+            {
+                "title": "Неприличные Олени",
+                "price": "1230₽",
+                "image": "shared/headwear_hat/6.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "990₽",
+                "image": "shared/headwear_hat/7.png"
+            },
+            {
+                "title": "AC MILAN.",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/8.png"
+            },
+            {
+                "title": "The Witcher",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/9.png"
+            },
+            {
+                "title": "Black Grunge",
+                "price": "990₽",
+                "image": "shared/headwear_hat/10.png"
+            }
+        ],
+        "Панамки": [
+            {
+                "title": "Капибара - водосвинка",
+                "price": "1135₽",
+                "image": "shared/panamas/1.png"
+            },
+            {
+                "title": "Дракон покоряет сердце",
+                "price": "1135₽",
+                "image": "shared/panamas/2.png"
+            },
+            {
+                "title": "Укупник",
+                "price": "1135₽",
+                "image": "shared/panamas/3.png"
+            },
+            {
+                "title": "Олег всегда прав",
+                "price": "1135₽",
+                "image": "shared/panamas/4.png"
+            },
+            {
+                "title": "We are the champions",
+                "price": "1100₽",
+                "image": "shared/panamas/5.png"
+            },
+            {
+                "title": "Пингвин в наушниках",
+                "price": "1135₽",
+                "image": "shared/panamas/6.png"
+            },
+            {
+                "title": "heartbeatmusic",
+                "price": "1135₽",
+                "image": "shared/panamas/7.png"
+            },
+            {
+                "title": "Toyota Logo",
+                "price": "1135₽",
+                "image": "shared/panamas/8.png"
+            },
+            {
+                "title": "Among Us",
+                "price": "1135₽",
+                "image": "shared/panamas/9.png"
+            },
+            {
+                "title": "Легенды о Зельде - дух",
+                "price": "1100₽",
+                "image": "shared/panamas/10.png"
+            }
+        ],
+        "Маски": [
+            {
+                "title": "Череп маска черная",
+                "price": "1230₽",
+                "image": "shared/face_shield/1.png"
+            },
+            {
+                "title": "Ахегао лица",
+                "price": "1230₽",
+                "image": "shared/face_shield/2.png"
+            },
+            {
+                "title": "Чёрная Магия и Колдовство",
+                "price": "1230₽",
+                "image": "shared/face_shield/3.png"
+            },
+            {
+                "title": "Пограничные войска",
+                "price": "1190₽",
+                "image": "shared/face_shield/4.png"
+            },
+            {
+                "title": "Челюсть Колоссального титана",
+                "price": "1230₽",
+                "image": "shared/face_shield/5.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "1190₽",
+                "image": "shared/face_shield/6.png"
+            },
+            {
+                "title": "Демона Они",
+                "price": "1230₽",
+                "image": "shared/face_shield/7.png"
+            },
+            {
+                "title": "ЭТНИЧЕСКАЯ ЛИСА БАНДАНА ",
+                "price": "1230₽",
+                "image": "shared/face_shield/8.png"
+            },
+            {
+                "title": "Граффити Neon",
+                "price": "1230₽",
+                "image": "shared/face_shield/9.png"
+            },
+            {
+                "title": "МАСКА КАНЕКИ КЕНА | TOKYO GHOUL | ТОКИЙСКИЙ ГУЛЬ",
+                "price": "1230₽",
+                "image": "shared/face_shield/10.png"
+            }
+        ]
+    },
+    "Женщина": {
+        "Футболки": [
+            {
+                "title": "По*уй",
+                "price": "1640₽",
+                "image": "woman/tshirts/1.png"
+            },
+            {
+                "title": "Дерево - Киберпанк 2077",
+                "price": "1290₽",
+                "image": "woman/tshirts/2.png"
+            },
+            {
+                "title": "МИР ТРУД БРЮТ",
+                "price": "1330₽",
+                "image": "woman/tshirts/3.png"
+            },
+            {
+                "title": "Let it be: будь как будет",
+                "price": "1640₽",
+                "image": "woman/tshirts/4.png"
+            },
+            {
+                "title": "Джинсовый. Полевые цветы",
+                "price": "1210₽",
+                "image": "woman/tshirts/5.png"
+            },
+            {
+                "title": "This is Fine",
+                "price": "1560₽",
+                "image": "woman/tshirts/6.png"
+            },
+            {
+                "title": "Белая базовая 6",
+                "price": "1510₽",
+                "image": "woman/tshirts/7.png"
+            },
+            {
+                "title": "Keep calm and drink coffee",
+                "price": "1640₽",
+                "image": "woman/tshirts/8.png"
+            },
+            {
+                "title": "Миссис (парная)",
+                "price": "1640₽",
+                "image": "woman/tshirts/9.png"
+            },
+            {
+                "title": "Её величество Марина",
+                "price": "1170₽",
+                "image": "woman/tshirts/10.png"
+            }
+        ],
+        "Толстовки с капюшоном": [
+            {
+                "title": "Фыр-Фыр",
+                "price": "2490₽",
+                "image": "woman/hoodies/1.png"
+            },
+            {
+                "title": "ШЕНЬ ХЭ ГЕНШИН ИМПАКТ ГЕРОИНЯ / НЕОНОЫЙ ОГОНЬ ",
+                "price": "2490₽",
+                "image": "woman/hoodies/2.png"
+            },
+            {
+                "title": "Lavanda",
+                "price": "2510₽",
+                "image": "woman/hoodies/3.png"
+            },
+            {
+                "title": "Безразличие ",
+                "price": "3290₽",
+                "image": "woman/hoodies/4.png"
+            },
+            {
+                "title": "Ирисы",
+                "price": "2590₽",
+                "image": "woman/hoodies/5.png"
+            },
+            {
+                "title": "Косуха терминатора",
+                "price": "2490₽",
+                "image": "woman/hoodies/6.png"
+            },
+            {
+                "title": "КОТИК ДЬЯВОЛ / KITTY DEVIL",
+                "price": "2490₽",
+                "image": "woman/hoodies/7.png"
+            },
+            {
+                "title": "КИПЕЛОВ - Валерий Кипелов",
+                "price": "2490₽",
+                "image": "woman/hoodies/8.png"
+            },
+            {
+                "title": "Mass Effect N7",
+                "price": "2490₽",
+                "image": "woman/hoodies/9.png"
+            },
+            {
+                "title": "Котик с попкорном",
+                "price": "2490₽",
+                "image": "woman/hoodies/10.png"
+            }
+        ],
+        "Толстовки": [
+            {
+                "title": "Lavanda",
+                "price": "2510₽",
+                "image": "woman/sweatshirts/1.png"
+            },
+            {
+                "title": "Силуэт чёрного кота",
+                "price": "2590₽",
+                "image": "woman/sweatshirts/2.png"
+            },
+            {
+                "title": "Vaporwave",
+                "price": "1930₽",
+                "image": "woman/sweatshirts/3.png"
+            },
+            {
+                "title": "ЛИСА",
+                "price": "1990₽",
+                "image": "woman/sweatshirts/4.png"
+            },
+            {
+                "title": "Moriarty Moriarty the patriot",
+                "price": "1930₽",
+                "image": "woman/sweatshirts/5.png"
+            },
+            {
+                "title": "PocketPuppy#1",
+                "price": "2590₽",
+                "image": "woman/sweatshirts/6.png"
+            },
+            {
+                "title": "Золотой лотос",
+                "price": "1990₽",
+                "image": "woman/sweatshirts/7.png"
+            },
+            {
+                "title": "Капибара и птичка",
+                "price": "2590₽",
+                "image": "woman/sweatshirts/8.png"
+            },
+            {
+                "title": "Фрактал линии",
+                "price": "1990₽",
+                "image": "woman/sweatshirts/9.png"
+            },
+            {
+                "title": "Цой Жив!",
+                "price": "1990₽",
+                "image": "woman/sweatshirts/10.png"
+            }
+        ],
+        "Лонгсливы": [
+            {
+                "title": "Без дизайна",
+                "price": "1690₽",
+                "image": "woman/longsleeves/1.png"
+            },
+            {
+                "title": "Котик музыкальный белый",
+                "price": "1745₽",
+                "image": "woman/longsleeves/2.png"
+            },
+            {
+                "title": "цветы на черном",
+                "price": "1590₽",
+                "image": "woman/longsleeves/3.png"
+            },
+            {
+                "title": "Лисица",
+                "price": "1590₽",
+                "image": "woman/longsleeves/4.png"
+            },
+            {
+                "title": "Геральт: снаряжение",
+                "price": "1590₽",
+                "image": "woman/longsleeves/5.png"
+            },
+            {
+                "title": "Акварельный рисунок растений",
+                "price": "1745₽",
+                "image": "woman/longsleeves/6.png"
+            },
+            {
+                "title": "букет роз",
+                "price": "1690₽",
+                "image": "woman/longsleeves/7.png"
+            },
+            {
+                "title": "Ирисы",
+                "price": "1590₽",
+                "image": "woman/longsleeves/8.png"
+            },
+            {
+                "title": "Настя ",
+                "price": "1590₽",
+                "image": "woman/longsleeves/9.png"
+            },
+            {
+                "title": "Красные цветы",
+                "price": "1590₽",
+                "image": "woman/longsleeves/10.png"
+            }
+        ],
+        "Майки": [
+            {
+                "title": "Кот прорвался",
+                "price": "920₽",
+                "image": "woman/tanks/1.png"
+            },
+            {
+                "title": "Без дизайна",
+                "price": "890₽",
+                "image": "woman/tanks/2.png"
+            },
+            {
+                "title": "Магнолия",
+                "price": "920₽",
+                "image": "woman/tanks/3.png"
+            },
+            {
+                "title": "Крик котика",
+                "price": "1290₽",
+                "image": "woman/tanks/4.png"
+            },
+            {
+                "title": "Силуэт чёрного кота",
+                "price": "920₽",
+                "image": "woman/tanks/5.png"
+            },
+            {
+                "title": "YogaBalance",
+                "price": "920₽",
+                "image": "woman/tanks/6.png"
+            },
+            {
+                "title": "Джинсовый. Полевые цветы",
+                "price": "1290₽",
+                "image": "woman/tanks/7.png"
+            },
+            {
+                "title": "QR-code-kote",
+                "price": "890₽",
+                "image": "woman/tanks/8.png"
+            },
+            {
+                "title": "HEROES",
+                "price": "1290₽",
+                "image": "woman/tanks/9.png"
+            },
+            {
+                "title": "Металлические полосы - текстура алюминия",
+                "price": "1290₽",
+                "image": "woman/tanks/10.png"
+            }
+        ],
+        "Брюки": [
+            {
+                "title": "Просто черный цвет",
+                "price": "2120₽",
+                "image": "woman/trousers/1.png"
+            },
+            {
+                "title": "Клетки",
+                "price": "2190₽",
+                "image": "woman/trousers/2.png"
+            },
+            {
+                "title": "Металлические полосы - текстура алюминия",
+                "price": "2190₽",
+                "image": "woman/trousers/3.png"
+            },
+            {
+                "title": "Без дизайна",
+                "price": "1540₽",
+                "image": "woman/trousers/4.png"
+            },
+            {
+                "title": "Мятная Маска",
+                "price": "2120₽",
+                "image": "woman/trousers/5.png"
+            },
+            {
+                "title": "Космос",
+                "price": "2190₽",
+                "image": "woman/trousers/6.png"
+            },
+            {
+                "title": "Женщина - кошка",
+                "price": "2120₽",
+                "image": "woman/trousers/7.png"
+            },
+            {
+                "title": "Geek",
+                "price": "2190₽",
+                "image": "woman/trousers/8.png"
+            },
+            {
+                "title": "Шотландка",
+                "price": "2190₽",
+                "image": "woman/trousers/9.png"
+            },
+            {
+                "title": "Бежевый с золотом мрамор",
+                "price": "2190₽",
+                "image": "woman/trousers/10.png"
+            }
+        ],
+        "Леггинсы": [
+            {
+                "title": "Просто черный цвет",
+                "price": "1490₽",
+                "image": "woman/trousers_leggings_shorts/1.png"
+            },
+            {
+                "title": "Без дизайна",
+                "price": "1490₽",
+                "image": "woman/trousers_leggings_shorts/2.png"
+            },
+            {
+                "title": "Огонь",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/3.png"
+            },
+            {
+                "title": "Черно-белый узор.",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/4.png"
+            },
+            {
+                "title": "Пончики",
+                "price": "1490₽",
+                "image": "woman/trousers_leggings_shorts/5.png"
+            },
+            {
+                "title": "Металлические полосы - текстура алюминия",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/6.png"
+            },
+            {
+                "title": "Вырезанный Узор",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/7.png"
+            },
+            {
+                "title": "Космос",
+                "price": "1490₽",
+                "image": "woman/trousers_leggings_shorts/8.png"
+            },
+            {
+                "title": "Леопард",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/9.png"
+            },
+            {
+                "title": "MASS EFFECT N7",
+                "price": "1540₽",
+                "image": "woman/trousers_leggings_shorts/10.png"
+            }
+        ],
+        "Шорты": [
+            {
+                "title": "Без дизайна",
+                "price": "690₽",
+                "image": "woman/shorts/1.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "1790₽",
+                "image": "woman/shorts/2.png"
+            },
+            {
+                "title": "АФРИКА | AFRICA",
+                "price": "1850₽",
+                "image": "woman/shorts/3.png"
+            },
+            {
+                "title": "Barbie - Барби",
+                "price": "2055₽",
+                "image": "woman/shorts/4.png"
+            },
+            {
+                "title": "Бушующий огонь",
+                "price": "1850₽",
+                "image": "woman/shorts/5.png"
+            },
+            {
+                "title": "Неоновые перья павлина",
+                "price": "2055₽",
+                "image": "woman/shorts/6.png"
+            },
+            {
+                "title": "Heroes of Might and Magic",
+                "price": "2055₽",
+                "image": "woman/shorts/7.png"
+            },
+            {
+                "title": "BT21 | BTS | БТС | BANGTAN BOYS",
+                "price": "2055₽",
+                "image": "woman/shorts/8.png"
+            },
+            {
+                "title": "Газета",
+                "price": "1850₽",
+                "image": "woman/shorts/9.png"
+            },
+            {
+                "title": "Вкусные Мороженки",
+                "price": "1850₽",
+                "image": "woman/shorts/10.png"
+            }
+        ],
+        "Платья": [
+            {
+                "title": "ЛЮБОВЬ СМЕРТЬ РОБОТЫ | LOVE DEATH ROBOTS (LDR)",
+                "price": "1750₽",
+                "image": "woman/dresses_skirts/1.png"
+            },
+            {
+                "title": "The best of Louna",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/2.png"
+            },
+            {
+                "title": "Хитрая лисичка",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/3.png"
+            },
+            {
+                "title": "Поцелуй бабочек",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/4.png"
+            },
+            {
+                "title": "Скелетоны",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/5.png"
+            },
+            {
+                "title": "Лаванда",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/6.png"
+            },
+            {
+                "title": "Твое Имя",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/7.png"
+            },
+            {
+                "title": "Аргентина",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/8.png"
+            },
+            {
+                "title": "Сова",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/9.png"
+            },
+            {
+                "title": "MAYHEM",
+                "price": "1490₽",
+                "image": "woman/dresses_skirts/10.png"
+            }
+        ],
+        "Бомберы": [
+            {
+                "title": "Шотландская клетка",
+                "price": "3590₽",
+                "image": "woman/bombers/1.png"
+            },
+            {
+                "title": "Зеленый неон",
+                "price": "3590₽",
+                "image": "woman/bombers/2.png"
+            },
+            {
+                "title": "Изумрудное настроение",
+                "price": "3590₽",
+                "image": "woman/bombers/3.png"
+            },
+            {
+                "title": "Черно-белый ажурный кружевной узор",
+                "price": "3590₽",
+                "image": "woman/bombers/4.png"
+            },
+            {
+                "title": "Снежинки паттерн",
+                "price": "3590₽",
+                "image": "woman/bombers/5.png"
+            },
+            {
+                "title": "Косуха терминатора",
+                "price": "3590₽",
+                "image": "woman/bombers/6.png"
+            },
+            {
+                "title": "ЛАТУНЬ",
+                "price": "3590₽",
+                "image": "woman/bombers/7.png"
+            },
+            {
+                "title": "Лоскутное шитьё",
+                "price": "3480₽",
+                "image": "woman/bombers/8.png"
+            },
+            {
+                "title": "Коты инь-янь",
+                "price": "3590₽",
+                "image": "woman/bombers/9.png"
+            },
+            {
+                "title": "Черно-белый узор",
+                "price": "3590₽",
+                "image": "woman/bombers/10.png"
+            }
+        ],
+        "Бейсболки": [
+            {
+                "title": "Акула",
+                "price": "920₽",
+                "image": "shared/cap_trucker/1.png"
+            },
+            {
+                "title": "I love hot BEBRA | НАДПИСЬ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/2.png"
+            },
+            {
+                "title": "УТКА С НОЖОМ КРУГЛЯШ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/3.png"
+            },
+            {
+                "title": "Продюсер",
+                "price": "920₽",
+                "image": "shared/cap_trucker/4.png"
+            },
+            {
+                "title": "Slipknot logo",
+                "price": "890₽",
+                "image": "shared/cap_trucker/5.png"
+            },
+            {
+                "title": "Кот программист",
+                "price": "920₽",
+                "image": "shared/cap_trucker/6.png"
+            },
+            {
+                "title": "Кот с ножом ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/7.png"
+            },
+            {
+                "title": "ВДВ",
+                "price": "920₽",
+                "image": "shared/cap_trucker/8.png"
+            },
+            {
+                "title": "Артём - с большой буквы",
+                "price": "920₽",
+                "image": "shared/cap_trucker/9.png"
+            },
+            {
+                "title": "Самый лучший папа",
+                "price": "920₽",
+                "image": "shared/cap_trucker/10.png"
+            }
+        ],
+        "Шапки": [
+            {
+                "title": "Cyberpunk 2077: броня синяя сталь",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/1.png"
+            },
+            {
+                "title": "конь на красном фоне",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/2.png"
+            },
+            {
+                "title": "BLEACH (НА СПИНЕ) | БЛИЧ",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/3.png"
+            },
+            {
+                "title": "Chelsea",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/4.png"
+            },
+            {
+                "title": "Уэнсдей - окно ночной витраж - текстура зерна",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/5.png"
+            },
+            {
+                "title": "Неприличные Олени",
+                "price": "1230₽",
+                "image": "shared/headwear_hat/6.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "990₽",
+                "image": "shared/headwear_hat/7.png"
+            },
+            {
+                "title": "AC MILAN.",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/8.png"
+            },
+            {
+                "title": "The Witcher",
+                "price": "1025₽",
+                "image": "shared/headwear_hat/9.png"
+            },
+            {
+                "title": "Black Grunge",
+                "price": "990₽",
+                "image": "shared/headwear_hat/10.png"
+            }
+        ],
+        "Панамки": [
+            {
+                "title": "Капибара - водосвинка",
+                "price": "1135₽",
+                "image": "shared/panamas/1.png"
+            },
+            {
+                "title": "Дракон покоряет сердце",
+                "price": "1135₽",
+                "image": "shared/panamas/2.png"
+            },
+            {
+                "title": "Укупник",
+                "price": "1135₽",
+                "image": "shared/panamas/3.png"
+            },
+            {
+                "title": "Олег всегда прав",
+                "price": "1135₽",
+                "image": "shared/panamas/4.png"
+            },
+            {
+                "title": "We are the champions",
+                "price": "1100₽",
+                "image": "shared/panamas/5.png"
+            },
+            {
+                "title": "Пингвин в наушниках",
+                "price": "1135₽",
+                "image": "shared/panamas/6.png"
+            },
+            {
+                "title": "heartbeatmusic",
+                "price": "1135₽",
+                "image": "shared/panamas/7.png"
+            },
+            {
+                "title": "Toyota Logo",
+                "price": "1135₽",
+                "image": "shared/panamas/8.png"
+            },
+            {
+                "title": "Among Us",
+                "price": "1135₽",
+                "image": "shared/panamas/9.png"
+            },
+            {
+                "title": "Легенды о Зельде - дух",
+                "price": "1100₽",
+                "image": "shared/panamas/10.png"
+            }
+        ],
+        "Маски": [
+            {
+                "title": "Череп маска черная",
+                "price": "1230₽",
+                "image": "shared/face_shield/1.png"
+            },
+            {
+                "title": "Ахегао лица",
+                "price": "1230₽",
+                "image": "shared/face_shield/2.png"
+            },
+            {
+                "title": "Чёрная Магия и Колдовство",
+                "price": "1230₽",
+                "image": "shared/face_shield/3.png"
+            },
+            {
+                "title": "Пограничные войска",
+                "price": "1190₽",
+                "image": "shared/face_shield/4.png"
+            },
+            {
+                "title": "Челюсть Колоссального титана",
+                "price": "1230₽",
+                "image": "shared/face_shield/5.png"
+            },
+            {
+                "title": "Просто черный цвет",
+                "price": "1190₽",
+                "image": "shared/face_shield/6.png"
+            },
+            {
+                "title": "Демона Они",
+                "price": "1230₽",
+                "image": "shared/face_shield/7.png"
+            },
+            {
+                "title": "ЭТНИЧЕСКАЯ ЛИСА БАНДАНА ",
+                "price": "1230₽",
+                "image": "shared/face_shield/8.png"
+            },
+            {
+                "title": "Граффити Neon",
+                "price": "1230₽",
+                "image": "shared/face_shield/9.png"
+            },
+            {
+                "title": "МАСКА КАНЕКИ КЕНА | TOKYO GHOUL | ТОКИЙСКИЙ ГУЛЬ",
+                "price": "1230₽",
+                "image": "shared/face_shield/10.png"
+            }
+        ]
+    }
+}

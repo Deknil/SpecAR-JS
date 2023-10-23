@@ -1,0 +1,36 @@
+<div class="weather-module-container" id="{{containerID}}">
+    {% if not data %}
+    <div class="weather-module-container__weather placeholder-glow">
+        <img class="weather-module-container__weather__icon placeholder" width="100" height="100" alt=""></img>
+        <div class="weather-module-container__weather__text">
+            <span class="weather-module-container__weather__text__temp placeholder">No data °С</span>
+            <span class="weather-module-container__weather__text__sky placeholder">No data</span>
+        </div>
+    </div>
+    <div class="weather-module-container__gps placeholder-glow">
+        <svg class="weather-module-container__gps__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-2 -2 24 24">
+            <path fill="currentColor"
+                d="m18.919 2.635l-5.953 16.08c-.376 1.016-1.459 1.538-2.418 1.165a1.851 1.851 0 0 1-1.045-1.054l-1.887-4.77a3.712 3.712 0 0 0-1.955-2.052l-4.542-1.981C.174 9.61-.256 8.465.157 7.465a1.97 1.97 0 0 1 1.067-1.079L16.54.136c.967-.395 2.04.101 2.395 1.109c.157.446.151.94-.015 1.39z" />
+        </svg>
+        <span class="weather-module-container__gps__city placeholder">No data • <span id="weather-module-container_fetchTime" class="placeholder">No data</span></span>
+    </div>
+    {% else %}
+    <div class="weather-module-container" id="{{containerID}}">
+        <div class="weather-module-container__weather">
+            <img class="weather-module-container__weather__icon" src="https://openweathermap.org/img/wn/{{data.iconID|default('02n')}}@2x.png" alt=""></img>
+            <div class="weather-module-container__weather__text">
+                <span class="weather-module-container__weather__text__temp">{{data.temperature|default('...')}} °С</span>
+                <span class="weather-module-container__weather__text__sky">{{data.sky|default('...')}}</span>
+            </div>
+        </div>
+        <div class="weather-module-container__gps">
+            <svg class="weather-module-container__gps__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="-2 -2 24 24">
+                <path fill="currentColor"
+                    d="m18.919 2.635l-5.953 16.08c-.376 1.016-1.459 1.538-2.418 1.165a1.851 1.851 0 0 1-1.045-1.054l-1.887-4.77a3.712 3.712 0 0 0-1.955-2.052l-4.542-1.981C.174 9.61-.256 8.465.157 7.465a1.97 1.97 0 0 1 1.067-1.079L16.54.136c.967-.395 2.04.101 2.395 1.109c.157.446.151.94-.015 1.39z" />
+            </svg>
+            <span class="weather-module-container__gps__city">{{data.city|default('...')}} • <span id="weather-module-container_fetchTime">{{data.fetchTime|default('...')}}</span></span>
+        </div>
+    </div>
+
+    {% endif %}
+</div>

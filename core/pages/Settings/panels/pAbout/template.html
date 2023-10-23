@@ -1,0 +1,66 @@
+<div class="settings_body__content__pAbout">
+    <div class="settings_body__content__pAbout__updateBox" onClick="SpecAR.tools.appUpdate()">
+        <img class='settings_body__content__pAbout__updateBox__logo' src={{SpecAR.getPath('assets/images/appicon.png')}} />
+        <div class="settings_body__content__pAbout__updateBox__title">
+            {% if SpecAR.deviceAPI.version.lastVersion != SpecAR.deviceAPI.version.appVersion %}
+            <span
+                class="settings_body__content__pAbout__updateBox__title__item settings_body__content__pAbout__updateBox__title__newUpdate"
+            >
+                {{translator('PABOUT_UPDATEBOX__NEEDUPDATE', {newVersion: SpecAR.deviceAPI.version.lastVersion})}}
+            </span>
+            {% else %}
+            <span
+                class="settings_body__content__pAbout__updateBox__title__item settings_body__content__pAbout__updateBox__title__newUpdate"
+            >
+                {{translator('PABOUT_UPDATEBOX__NO_UPDATE_REQUIRED')}}
+            </span>
+            {% endif %}
+
+            <span
+                class="settings_body__content__pAbout__updateBox__title__item settings_body__content__pAbout__updateBox__title__isOfficial"
+                >{{translator('PABOUT_UPDATEBOX__OFFICIAL_VERSION')}}</span
+            >
+            <span
+                class="settings_body__content__pAbout__updateBox__title__item settings_body__content__pAbout__updateBox__title__version"
+            >
+                {{translator('PABOUT_UPDATEBOX__VERSION', {currentVersion: SpecAR.deviceAPI.version.appVersion})}}
+            </span>
+        </div>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator('PABOUT_INFO__DEVICE_NAME')}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.deviceName}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__DISK_SPACE")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.diskData}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__RAM")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.RAM}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__CPU")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.CPU}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__ARCH")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.arch}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__PLATFORM")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.platform}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__OS_RELEASE")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.release}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__OS_TYPE")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.osType}}</span>
+    </div>
+    <div class="settings_body__content__pAbout__infoBox">
+        <span class="settings_body__content__pAbout__infoBox__title">{{translator("PABOUT_INFO__OS_VERSION")}}</span>
+        <span class="settings_body__content__pAbout__infoBox__info">{{SpecAR.deviceAPI.aboutInfo.osVersion}}</span>
+    </div>
+</div>

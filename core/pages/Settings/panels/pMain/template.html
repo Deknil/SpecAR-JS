@@ -1,0 +1,196 @@
+<div class="settings_body__content__pMain">
+    <div class="settings_body__content__pMain__container">
+        <span class="settings_body__content__pMain__container__title"
+            >{{translator('PMAIN_SOUND__TITLE')}}</span
+        >
+        <div class="SpecAR-UIKIT-slider mb-3">
+            <label class="SpecAR-UIKIT-slider__title" for="SOUND_MAIN"
+                >{{translator('PMAIN_SOUND__MAIN')}}</label
+            >
+            <input id="settings-pmain-volume-main" type="range" name="SOUND_MAIN" min="0" max="100" step="1"
+            value="{{SpecAR.Config.getData.mainVolume}}" onchange="SpecAR.Config.API.setVolumeMain(this.value)"">
+        </div>
+        <div class="SpecAR-UIKIT-slider mb-3">
+            <label class="SpecAR-UIKIT-slider__title" for="SOUND_NOTIFY"
+                >{{translator('PMAIN_SOUND__NOTIFY')}}</label
+            >
+            <input
+                type="range"
+                name="SOUND_NOTIFY"
+                min="0"
+                max="100"
+                step="1"
+                value="{{SpecAR.Config.getData.notifyVolume}}"
+                onchange="SpecAR.Config.API.setVolumeNotify(this.value)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-slider">
+            <label class="SpecAR-UIKIT-slider__title" for="SOUND_APPLICATION"
+                >{{translator('PMAIN_SOUND__APPLICATION')}}</label
+            >
+            <input
+                type="range"
+                name="SOUND_APPLICATIO"
+                min="0"
+                max="100"
+                step="1"
+                value="{{SpecAR.Config.getData.applicationVolume}}"
+                onchange="SpecAR.Config.API.setVolumeApplication(this.value)"
+            />
+        </div>
+    </div>
+    <div class="settings_body__content__pMain__container">
+        <span class="settings_body__content__pMain__container__title"
+            >{{translator('PMAIN_DISPLAY__TITLE')}}</span
+        >
+        <div class="mb-2 dropdown d-flex align-items-center"">
+            <label class="form-label" for="DISPLAY_LOCALE"
+                >{{translator('PMAIN_DISPLAY__LANGUAGE')}}</label
+            >
+            <button
+                class="settings-language-dropdown dropdown-toggle"
+                type="button"
+                id="LANGUAGE_SELECTOR"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                {{currentLocaleName}}
+            </button>
+            <ul class="dropdown-menu settings-language-dropdown-menu" aria-labelledby="LANGUAGE_SELECTOR">
+                {% for localeCode, localeData in localeList %}
+                <li>
+                    <a class="dropdown-item" href="#" onclick="SpecAR.Config.API.setLocale('{{ localeCode }}')"
+                        >{{ localeData.name }}</a
+                    >
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label class="SpecAR-UIKIT-color__title" for="DISPLAY_BACKGROUND_COLOR"
+                >{{translator('PMAIN_DISPLAY__BACKGROUND_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_BACKGROUND_COLOR"
+                value="{{SpecAR.Config.getData.backgroundColor}}"
+                data-category="BACKGROUND_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label
+                class="SpecAR-UIKIT-color__title"
+                for="DISPLAY_TEXT_PRIMARY_COLOR"
+                >{{translator('PMAIN_DISPLAY__TEXT_PRIMARY_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_TEXT_PRIMARY_COLOR"
+                value="{{SpecAR.Config.getData.textPrimaryColor}}"
+                data-category="TEXT_PRIMARY_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label
+                class="SpecAR-UIKIT-color__title"
+                for="DISPLAY_TEXT_SECONDARY_COLOR"
+                >{{translator('PMAIN_DISPLAY__TEXT_SECONDARY_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_TEXT_SECONDARY_COLOR"
+                value="{{SpecAR.Config.getData.textSecondaryColor}}"
+                data-category="TEXT_SECONDARY_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label class="SpecAR-UIKIT-color__title" for="DISPLAY_ACCENT_COLOR"
+                >{{translator('PMAIN_DISPLAY__ACCENT_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_ACCENT_COLOR"
+                value="{{SpecAR.Config.getData.accentColor}}"
+                data-category="ACCENT_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label class="SpecAR-UIKIT-color__title" for="DISPLAY_ICON_COLOR"
+                >{{translator('PMAIN_DISPLAY__ICON_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_ICON_COLOR"
+                value="{{SpecAR.Config.getData.iconColor}}"
+                data-category="ICON_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label
+                class="SpecAR-UIKIT-color__title"
+                for="DISPLAY_PAGE_BACKGROUND_PRIMARY_COLOR"
+                >{{translator('PMAIN_DISPLAY__PAGE_BACKGROUND_PRIMARY_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_PAGE_BACKGROUND_PRIMARY_COLOR"
+                value="{{SpecAR.Config.getData.pageBackgroundPrimaryColor}}"
+                data-category="PAGE_BACKGROUND_PRIMARY_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+        <div class="SpecAR-UIKIT-color mb-2">
+            <label
+                class="SpecAR-UIKIT-color__title"
+                for="DISPLAY_PAGE_BACKGROUND_SECONDARY_COLOR"
+                >{{translator('PMAIN_DISPLAY__PAGE_BACKGROUND_SECONDARY_COLOR')}}</label
+            >
+            <input
+                type="color"
+                className="SpecAR-UIKIT-color__input"
+                name="DISPLAY_PAGE_BACKGROUND_SECONDARY_COLOR"
+                value="{{SpecAR.Config.getData.pageBackgroundSecondaryColor}}"
+                data-category="PAGE_BACKGROUND_SECONDARY_COLOR"
+                onchange="SpecAR.Config.API.setThemeColor(this)"
+            />
+        </div>
+    </div>
+    <div class="settings_body__content__pMain__container">
+        <span class="settings_body__content__pMain__container__title"
+            >{{translator('PMAIN_PROFILE__TITLE')}}</span
+        >
+        <div class="form-check form-switch SpecAR-UIKIT-switch">
+            <label class="form-check-label" for="autoDetectProfile-switch">{{translator('PMAIN_PROFILE__AUTODETECT')}}</label>
+            <input class="form-check-input" 
+            type="checkbox" role="switch" 
+            id="autoDetectProfile-switch" 
+            {% if SpecAR.Config.getData.profileAutoDetect %}
+                checked
+            {% endif %}
+            onchange="SpecAR.Config.API.setProfileAutoDetect(this.checked)">
+        </div>
+        <div class="form-check form-switch SpecAR-UIKIT-switch">
+            <label class="form-check-label" for="autoExitProfile-switch">{{translator('PMAIN_PROFILE__AUTOEXIT')}}</label>
+            <input class="form-check-input" 
+            type="checkbox" 
+            role="switch" 
+            id="autoExitProfile-switch" 
+            {% if SpecAR.Config.getData.profileAutoExit %}
+                checked
+            {% endif %}
+            onchange="SpecAR.Config.API.setProfileAutoExit(this.checked); 
+            SpecAR.Profile.initProfileAutoExit();">
+        </div>
+    </div>
+</div>

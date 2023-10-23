@@ -1,0 +1,47 @@
+.weather-module-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.weather-module-container__weather {
+    display: flex;
+    align-items: center;
+}
+
+.weather-module-container__weather__icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.weather-module-container__weather__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-module-container__weather__text__temp {
+    font-size: 28px;
+}
+.weather-module-container__weather__text__sky {
+    font-size: 14px;
+}
+
+.weather-module-container__gps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-module-container__gps__icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0.8);
+    margin-right: 10px;
+}
+.weather-module-container__gps__city {
+    font-size: 14px;
+    filter: brightness(0.8);
+}
